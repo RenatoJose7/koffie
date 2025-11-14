@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "coolvetica";
+  src: url(font/coolvetica/Coolvetica\ Rg.otf);
+}
+
+@font-face {
+  font-family: "baby";
+  src: url(font/babydoll/Baby\ Doll.otf);
+}
+
+@font-face {
+  font-family: "super";
+  src: url(font/super_comic_3/Super\ Comic.ttf);
+}
+
+@font-face {
+  font-family: "marline";
+  src: url(font/marline/Marline\ Personal\ Use\ Only.otf);
+}
+
+@font-face {
+  font-family: "creato";
+  src: url(font/creato_display/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+  font-family: "alte haas grotesk bold";
+  src: url(/font/AlteHaasGroteskBold.ttf);
+}
+
+@font-face {
+  font-family: "cocogoose";
+  src: url(/font/cocogoose/Cocogoose-Pro-Darkmode-trial.ttf);
+}
+
+@font-face {
+  font-family: "bear";
+  src: url(font/bear_days/Bear\ Days.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "cocogoose";
+}
+
+
+body {
+  margin: 0;
+  font-family: "cocogoose", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+
+header {
+  width: 100%;
+  font-family: "cocogoose";
+}
+
+.capa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: #ffffff;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.capa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  animation: lightSweep 8s infinite linear;
+}
+
+.logo {
+  width: 180px;
+  height: 80px;
+  transition: transform 0.6s ease, filter 0.5s ease;
+}
+.logo:hover {
+  transform: scale(1.4);
+  filter: drop-shadow(0 4px 6px rgba(157, 47, 49, 0.25));
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.nave {
+  position: relative;
+  text-decoration: none;
+  font-size: 28px;
+  color: #6b2b22;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+.nave:hover {
+  color: #6b2b22;
+  transform: translateY(-2px);
+}
+.nave::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #6b2b22;
+  transition: width 0.4s ease;
+  transform: translateX(-50%);
+}
+.nave:hover::after {
+  width: 100%;
+}
+.nave.ativo {
+  color: #9d2f31;
+  font-size: 30px;
+}
+
+.eventosMain {
+  text-align: center;
+  padding: 60px 8%;
+  background-color: #fbf4eb;
+  animation: fadeUp 1s ease;
+}
+
+.tituloEventos {
+  font-size: 40px;
+  color: #9d2f31;
+  margin-bottom: 40px;
+  font-family: "cocogoose";
+}
+
+.main {
+  background-color: #fbf4eb;
+}
+
+.produt {
+  font-family: "cocogoose";
+  font-size: 35px;
+  color: rgb(255, 226, 201);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: 1000px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  font: 200;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 10px;
+
+
+
+
+}
+
+.section {
+  padding-top: 40px;
+}
+
+.produto {
+  margin-left: 50px;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.prodimg {
+
+  margin-top: 20px;
+  width: 300px;
+  margin-bottom: 30px;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  cursor: pointer;
+
+}
+
+a {
+  color: rgb(177, 110, 51);
+}
+.bbutton {
+  font-family: "cocogoose";
+  width: 150px;
+  border-radius: 30px;
+  border: #9d2f31;
+  border-width: 50px;
+  background-color: rgb(255, 226, 201);
+  color: #644848;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -55px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  width: 200px;
+}
+
+.bbutton:hover {
+  transform: scale(1.08);
+  background-color: rgb(255, 226, 201);
+  box-shadow: 0 4px 12px rgba(157, 47, 49, 0.3);
+}
+
+.bbutton:active {
+  transform: scale(0.94);
+  box-shadow: 0 2px 6px rgba(157, 47, 49, 0.2);
+}
+
+
+.pword {
+  margin-left: 20px;
+  font-size: 30px;
+  color: rgb(255, 226, 201);
+  margin-bottom: -25px;
+  font-family: "cocogoose";
+}
+
+.comidas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 colunas */
+  gap: 40px;
+  /* espaço entre eles */
+  justify-items: center;
+  /* centraliza cada bloco */
+  margin-top: 40px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.sp {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+}
+
+.textinho {
+  text-align: center;
+  margin: 15px;
+}
+
+.promocoes {
+  display: flex;
+  background-color: #ffffff;
+  height: 950px;
+}
+
+.promoc {
+  text-align: center;
+
+}
+
+.cardapio {
+  background-color: #7b5543;
+}
+
+.pBrownie,
+.pCaridosa {
+  width: 792px;
+  height: 525px;
+  transition: 0.3s ease-in;
+  margin-top: -30px;
+}
+
+.pBrownie:hover,
+.pCaridosa:hover {
+  scale: 1.02;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 40px 30px 20px;
+}
+
+.nSolidario {
+
+  transition: 0.3s ease-in;
+}
+
+.nSolidario:hover {
+  scale: 1.02;
+}
+
+/*  VIDEO INICIO   */
+
+.videoheader {
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.videoheader video {
+  width: 100%;
+}
+
+/*  VIDEOS RECEITAS  */
+
+.videos {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  top: 0;
+
+}
+
+.video {
+  width: 300px;
+  height: 800px;
+  border-radius: 980px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.titulovideos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "cocogoose";
+  color: #6b2b22;
+  margin-top: 20px;
+  margin-bottom: -130px;
+}

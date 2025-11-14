@@ -1,0 +1,604 @@
+/* FONTES */
+
+.p1{
+    font-family: creato;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0;
+    width: 600px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cocogoose";
+}
+
+.coo1 {
+    font-family: coolvetica;
+}
+
+@font-face {
+    font-family: "coolvetica";
+    src: url(font/coolvetica/Coolvetica\ Rg.otf);
+}
+@font-face {
+    font-family: "baby";
+    src: url(font/babydoll/Baby\ Doll.otf);
+}
+@font-face {
+  font-family: "super";
+  src: url(font/super_comic_3/Super\ Comic.ttf);
+}
+@font-face {
+  font-family: "marline";
+  src: url(font/marline/Marline\ Personal\ Use\ Only.otf);
+}
+@font-face {
+  font-family: "creato";
+  src: url(font/creato_display/CreatoDisplay-Light.otf);
+}
+@font-face {
+  font-family: "alte haas grotesk bold";
+  src: url(/font/AlteHaasGroteskBold.ttf);
+}
+@font-face {
+  font-family: "cocogoose";
+  src: url(/font/cocogoose/Cocogoose-Pro-Darkmode-trial.ttf);
+}
+@font-face {
+  font-family: "bear";
+  src: url(font/bear_days/Bear\ Days.otf);
+}
+
+/*  */
+
+header {
+  width: 100%;
+  font-family: "cocogoose";
+}
+
+.capa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: #7b5543;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.capa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  animation: lightSweep 8s infinite linear;
+}
+
+.logo {
+  width: 180px;
+  height: 80px;
+  transition: transform 0.6s ease, filter 0.5s ease;
+}
+.logo:hover {
+  transform: scale(1.4);
+  filter: drop-shadow(0 4px 6px rgba(157, 47, 49, 0.25));
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.nave {
+  position: relative;
+  text-decoration: none;
+  font-size: 28px;
+  color: #fff5e8;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+.nave:hover {
+  color: #fff5e8;
+  transform: translateY(-2px);
+}
+.nave::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.4s ease;
+  transform: translateX(-50%);
+}
+.nave:hover::after {
+  width: 100%;
+}
+.nave.ativo {
+  color: #9d2f31;
+  font-size: 30px;
+}
+
+.eventosMain {
+  text-align: center;
+  padding: 60px 8%;
+  background-color: #fbf4eb;
+  animation: fadeUp 1s ease;
+}
+
+.tituloEventos {
+  font-size: 40px;
+  color: #9d2f31;
+  margin-bottom: 40px;
+  font-family: "cocogoose";
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fbf4eb;
+}
+
+h2 {
+    font-family: bear;
+    font-size: 50px;
+    font-weight: 400;
+    width: 400px;
+}
+
+.teste {
+    margin-bottom: 350px;
+}
+
+.bann {
+    width: 100%;
+}
+/* -------------------------- COOKIE 1 ------------------------------------ */
+
+.cookie1 {
+    background-color: #fbf4eb;
+    margin-top: 220px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+.cookie1:hover {
+    background-color: rgb(235, 180, 136);
+     cursor: pointer;
+}
+
+.img01 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img1 {
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 1000px;
+    margin-bottom:100px;
+    transition: transform 0.4s ease;
+}
+
+.text1 {
+    margin-left: 220px;
+    margin-top: -20px;
+    margin-right: 85px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra1 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: rgb(235, 180, 136);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra1:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+
+.c1 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "bear";
+}
+
+.coo1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* -------------------------- COOKIE 2 ------------------------------------ */
+
+
+.cookie2 {
+    background-color: #fbf4eb;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    
+}
+
+.cookie2:hover {
+    background-color: rgb(255, 211, 154);
+     cursor: pointer;
+}
+
+.img02 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img2 {
+    margin-top: -50px;
+    margin-left: 680px;
+    margin-bottom: 100px;
+    width: 880px;
+    height: 800px;
+}
+
+.text2 {
+    margin-left: -230px;
+    margin-top: -20px;
+    margin-right: 950px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra2 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: rgb(255, 211, 154);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra2:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+.c2 {
+    font-size: 55px;
+    margin-bottom: 0;
+     font-family: "bear";
+}
+
+.coo2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* -------------------------- COOKIE 3 ------------------------------------ */
+
+
+.cookie3 {
+    background-color: #fbf4eb;
+    margin-top: 10px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+.cookie3:hover {
+    background-color: #d88385;
+     cursor: pointer;
+}
+
+.img03 {
+    margin-left: 30px;
+    width: 250px;
+    height: 200px;
+    border-radius: 40px;
+}
+
+.img3 {
+    margin-top: -500px;
+    margin-left: -120px;
+    width: 1000px;
+    margin-bottom: 100px;
+}
+
+.text3 {
+    margin-left: 220px;
+    margin-top: -20px;
+    margin-right: 85px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra3 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: #d88385;
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra3:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+
+.c3 {
+    font-size: 55px;
+    margin-bottom: 0;
+        font-family: "bear";
+}
+
+.coo3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* -------------------------- COOKIE 4 ------------------------------------ */
+
+.cookie4 {
+    background-color: #fbf4eb;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    
+}
+
+.cookie4:hover {
+    background-color: rgb(209, 131, 41);
+     cursor: pointer;
+}
+
+.img04 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img4 {
+    margin-top: -5px;
+    margin-left: 680px;
+    width: 880px;
+    margin-bottom: 100px;
+}
+
+.text4 {
+    margin-left: -230px;
+    margin-top: -20px;
+    margin-right: 950px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra4 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: rgb(255, 211, 154);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra4:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+.c4 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "bear";
+}
+
+.coo4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* -------------------------- COOKIE 5 ------------------------------------ */
+
+.cookie5 {
+    background-color: #fbf4eb;
+    margin-top: 20px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+.cookie5:hover {
+    background-color: #8a7c78;
+     cursor: pointer;
+}
+
+.img05 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img5 {
+    margin-top: -90px;
+    margin-left: -95px;
+    width: 850px;
+    margin-bottom: 100px;
+}
+
+.text5 {
+    margin-left: 220px;
+    margin-top: -20px;
+    margin-right: 85px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra5 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: #6e5952;
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra5:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+
+.c5 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "bear";
+}
+
+.coo5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* -------------------------- COOKIE 6 ------------------------------------ */
+
+.cookie6 {
+    background-color: #fbf4eb;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    
+}
+
+.cookie6:hover {
+    background-color: rgb(233, 226, 166);
+     cursor: pointer;
+}
+
+.img06 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img6 {
+    margin-top: -5px;
+    margin-left: 680px;
+    width: 750px;
+    margin-bottom: 100px;
+}
+
+.text6 {
+    margin-left: -230px;
+    margin-top: -20px;
+    margin-right: 950px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra6 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: rgb(233, 226, 166);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra6:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+.c6 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "bear";
+}
+
+.coo6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #6d0036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 900px;
+    height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* LADO ESQUERDO */
+.left {
+    width: 40%;
+    background: linear-gradient(135deg, #a12266, #da4a86);
+    padding: 50px 30px;
+    color: white;
+    position: relative;
+}
+
+.left h2 {
+    margin-top: 80px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.left p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.btn-left {
+    background: white;
+    color: #a12266;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 45%;
+    right: -60px;
+    cursor: pointer;
+}
+
+/* LADO DIREITO */
+.right {
+    width: 60%;
+    padding: 50px 70px;
+}
+
+.icon {
+    font-size: 45px;
+    background: #a12266;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 auto 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #a12266;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-size: 14px;
+}
+
+.campo input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    padding: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.forgot {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #a12266;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-text {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: #444;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social img {
+    width: 20px;
+    cursor: pointer;
+}
